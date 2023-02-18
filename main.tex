@@ -1,0 +1,174 @@
+
+\documentclass[a4paper,30pt]{article}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\usepackage{helvet}
+% Adjust margins
+\usepackage[bottom=0in,top=1in]{geometry}
+
+\addtolength{\oddsidemargin}{-0.530in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-0.9in}
+\addtolength{\textheight}{1in}
+\urlstyle{rm}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-15pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-6pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\normalsize{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeItemWithoutTitle}[1]{
+  \item\normalsize{
+    {\vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \vspace{-1pt}
+      \textit{#3} & \textit{#4} \\
+    \end{tabular*}\vspace{-3pt}
+}
+
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-3pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeItemTitle}[0]{}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-----------------------------
+%%%%%%  CV STARTS HERE  %%%%%%
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{{\LARGE Om Hemantkumar Purohit}} & \href{mailto:omhpurohit@gmail.com}{omhpurohit@gmail.com}\\
+  \href{https://www.linkedin.com/in/om-purohit-957187175/}{Linkedin} & +1-716-235-9016 \\
+\end{tabular*}
+
+%----------- EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {The State University Of New York, Buffalo}{NY, USA}
+      {Master in Engineering Science}{Aug 2021 - Dec 2022}    
+    \resumeSubheading
+      {Vellore Institute of Technology}{Vellore, India}
+      {Bachelor of Technology - Information Technology}{Jun 2017 - Jun 2021}
+    \resumeSubHeadingListEnd
+    
+%----------- EDUCATION END -----------------
+	    
+\vspace{-5pt}
+\section{Skills}
+	\resumeSubHeadingListStart
+	\resumeSubItem{Languages}{Python, Java, Javascript, Typescript, Matlab, SQL}
+	\resumeSubItem{Frameworks}{Flask, Express, Spring Boot, React, Angular}
+	\resumeSubItem{Databases}{MySQL, PostgreSQL, MongoDB, PouchDB, Neo4J}
+	\resumeSubItem{Deployment}{Heroku, AWS, git, Azure, Docker, Kubernetes}
+	\resumeSubItem{Visualization}{D3.js, Dash/Plotly, Altair, Matplotlib, Bokeh}
+\resumeSubHeadingListEnd
+
+% ----- EXPERIENCE START -----
+
+\vspace{1pt}
+\section{Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading{IQVIA}{Buffalo, NY}
+    {Software Developer Intern}{May 2022 - Dec 2022}
+    \resumeItemListStart
+        \resumeItemWithoutTitle - Constructed the asynchronous microservice backend with Python, Flask and PostgreSQL. Deployed it via Kubernetes.
+        \resumeItemWithoutTitle - Learned to develop with Java, Springboot. Applied Spring JPA, Hibernate to create an ORM for the backend. Tested
+application using JUnit.
+        \resumeItemWithoutTitle - Designed responsive and state persistent UI with React, Javascript, NodeJs, Redux and react-router.
+        \resumeItemWithoutTitle - The application automated the installation tasks and reduced time from 5 hours to 10 minutes.
+        \resumeItemWithoutTitle -  Contributed on the UI for data acquisition team using Angular 2, Material UI, and Typescript.
+
+    \resumeItemListEnd
+\vspace{1 pt}
+    \resumeSubheading {Twimbit}{Delhi, India}
+		{Developer Intern}{Aug 2020 - May 2021}		
+		\resumeItemListStart
+		    \resumeItemWithoutTitle - Developed Chrome extension to replace the default chrome history structure, storing the data in Neo4j.
+            \resumeItemWithoutTitle - Designed a dashboard with D3.js, HTML and CSS, featuring chrome history as a hierarchical tree data structure.
+            \resumeItemWithoutTitle - Built a dashboard using Pandas, Python, Dash/Plotly library to visualise tabs as clusters by performing topic modelling.
+            \resumeItemWithoutTitle - Constructed an ETL pipeline with Python, Pandas, Selenium and Apache Superset with a scheduled scraping
+            microservice.
+            \resumeItemWithoutTitle - Utilized the stored pool of chrome history objects, implemented a search suggestion algorithm. Aiding researchers to quickly reach sites pertaining to their research topic.
+
+		\resumeItemListEnd
+
+\vspace{1pt}	
+\resumeSubheading{Amilcar Technologies}{Johannesburg, South Africa}
+    {Data Science Intern}{May 2020 - July 2020}
+    \resumeItemListStart
+        \resumeItemWithoutTitle - Developed a resume parser using pattern matching algorithms with a backend REST API leveraging Flask and Python.
+        \resumeItemWithoutTitle - Built the UI using ReactJS with optimized search algorithms for recruiters to skim through seamlessly.
+        \resumeItemWithoutTitle - Devised scrapers using Python, Selenium, Pandas, and BeautifulSoup that scraped 45k apps.
+    \resumeItemListEnd
+\vspace{1pt}	
+\resumeSubheading{RMInfonetwork}{Vadodara, India}
+    {Web Developer Intern}{May 2019 - July 2019}
+    \resumeItemListStart
+        \resumeItemWithoutTitle - Assembled various web applications for various clients and enterprises. Deployed them on AWS, Heroku, and GoDaddy.
+        \resumeItemWithoutTitle - Used core web technologies to integrate frontend with PHP and XAMP Server. 
+    \resumeItemListEnd
+\vspace{1pt}
+\resumeSubHeadingListEnd
+
+\vspace{-5pt}
+
+% ----- EXPERIENCE END -----
+%-----------PROJECTS-----------------
+
+\section{Projects}
+\resumeSubHeadingListStart
+\vspace{2pt}
+\resumeSubItem{RAFT Consensus | Docker, Javascript, Express, MongoDB}{Implemented the famous consensus algorithm of RAFT, using socket and asynchronous programming
+methodologies. Utilized javascript, NodeJs, express and docker to design the backend logic. }
+\vspace{2pt}
+\resumeSubItem{Indian Cuisine  \href{http://indiancuisineskaggle.com/}{(Link)}| React, Javascript, Express, Pouchdb, AWS Lightsail}{Developed an application to search and explore the Indian Cuisines Kaggle dataset. Built React components
+integrated with NodeJs and Express in the backend. Managed and merged raw JSON data into a NoSQL database called PouchDB. Deployed on AWS LightSail.}
+\vspace{2pt}
+\resumeSubItem{Graphical Resume  \href{https://omegaji.github.io/Graphical-Resume/}{(Link)} | React, Javascript, D3.js}{Reconstructed my resume as a connected acyclic graph using D3.js and React. Implemented zooming, searching, SVG scaling and panning algorithms to efficiently navigate the whole visualization.  }
+\vspace{2pt}
+\resumeSubItem{AWS Image Recognition and Notification | S3, SNS, Lambda, Python, CloudWatch}{Leveraged AWS Rekognition, S3, and SNS to parse images and notify end users. Built a responsive UI with React connecting this microservice with AWS Lambda and Boto3.
+}
+\resumeSubHeadingListEnd
+
+\end{document}
